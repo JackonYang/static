@@ -3,6 +3,10 @@
 
 <head>
 
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Jackon Yang's CDN server</title>
 
 <link rel='stylesheet' type="text/css" href="http://static.jackon.me/bootstrap-3.3.5/css/bootstrap.min.css"></link>
@@ -18,10 +22,11 @@
         }
 
         h1 {
-            font-size: 17px;
+            font-size: 21px;
         }
 
         p {
+            font-size: 15px;
             margin: 10px auto;
         }
 
@@ -30,24 +35,9 @@
             text-decoration: none;
         }
 
-        .bg {
-            top: -50px;
-            bottom: -50px;
-            right: -50px;
-            left: -50px;
-            position: fixed;
-            background-size: cover;
-            -webkit-filter: blur(20px);
-            -moz-filter: blur(20px);
-            -o-filter: blur(20px);
-            -ms-filter: blur(20px);
-            filter: blur(20px);
-            opacity: 0;
-        }
-
         .stuff {
             color: #eee;
-            margin-top: 200px;
+            margin-top: 130px;
             position: relative;
             font-size: 13px;
             font-weight: 600;
@@ -61,25 +51,29 @@
             width: 200px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-
-        .done .bg {
-            transition: opacity 3s;
-            opacity: 0.9;
-        }
-
     </style>
 
 </head>
 
-<body onload="setTimeout(function() { document.getElementsByTagName('body')[0].className = 'done'; }, 300);">
+<body>
+
     <div class="stuff">
-        <h1>
+        <img src="http://static.jackon.me/images/kunth.jpg"></img>
+
+        <h1>Private CDN server of Jackon Yang</h1>
+
+        <p>
+            <a href="http://jackon.me">
+                <i class="fa fa-home"></i>
+                Jackon.me
+            </a>
+        </p>
+        <p>
             <a href="https://github.com/JackonYang">
                 <i class="fa fa-github-alt"></i>
-                Jackon Yang
+                JackonYang@github
             </a>
-        </h1>
-        <p>Private CDN server for static files</p>
+        </p>
     </div>
 
 <script src="http://static.jackon.me/jquery-1.11.3/jquery-1.11.3.min.js"></script>
